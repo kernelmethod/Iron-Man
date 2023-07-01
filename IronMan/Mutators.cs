@@ -6,7 +6,7 @@ namespace Kernelmethod.IronMan
 {
 
     [PlayerMutator]
-    public class SaveOnDeathMutator : IPlayerMutator
+    public class SaveMutator : IPlayerMutator
     {
         public void mutate(GameObject player)
         {
@@ -20,7 +20,7 @@ namespace Kernelmethod.IronMan
     }
 
     [HasCallAfterGameLoadedAttribute]
-    public class AddSaveOnDeathToPlayerHandler
+    public class AddSavePartsToPlayerHandler
     {
         [CallAfterGameLoadedAttribute]
         public static void AddSaveOnDeathCallback()
